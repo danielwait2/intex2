@@ -11,9 +11,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<WaterDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("WaterConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WaterConnection")));
 
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+    options.AddPolicy("AllowReactAppBlah",
+    policy => {
+        policy.WithOrigins("http://localhost:3000", "https://yellow-pebble-08b19f41e.6.azurestaticapps.net")
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    }));
 
 var app = builder.Build();
 
@@ -24,7 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(x => x.WithOrigins("http://localhost:3000"));
+app.UseCors("AllowReactAppBlah");
 
 app.UseHttpsRedirection();
 

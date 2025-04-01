@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Record\\Desktop\\WaterProject\\backend\\WaterProject.API\\WaterProject.API.csproj": {}
+    "/Users/spencerhilton/Desktop/WaterProject/backend/WaterProject.API/WaterProject.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Record\\Desktop\\WaterProject\\backend\\WaterProject.API\\WaterProject.API.csproj": {
+    "/Users/spencerhilton/Desktop/WaterProject/backend/WaterProject.API/WaterProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Record\\Desktop\\WaterProject\\backend\\WaterProject.API\\WaterProject.API.csproj",
+        "projectUniqueName": "/Users/spencerhilton/Desktop/WaterProject/backend/WaterProject.API/WaterProject.API.csproj",
         "projectName": "WaterProject.API",
-        "projectPath": "C:\\Users\\Record\\Desktop\\WaterProject\\backend\\WaterProject.API\\WaterProject.API.csproj",
-        "packagesPath": "C:\\Users\\Record\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Record\\Desktop\\WaterProject\\backend\\WaterProject.API\\obj\\",
+        "projectPath": "/Users/spencerhilton/Desktop/WaterProject/backend/WaterProject.API/WaterProject.API.csproj",
+        "packagesPath": "/Users/spencerhilton/.nuget/packages/",
+        "outputPath": "/Users/spencerhilton/Desktop/WaterProject/backend/WaterProject.API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Record\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/spencerhilton/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,14 +37,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.*, )"
             },
@@ -83,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
